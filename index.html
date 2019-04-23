@@ -1,465 +1,615 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Bootstrap</title>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<link rel="icon" href="images/favicon.ico">
+    <title>Bootstrap</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.ico">
 
-	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/bootstrap.min.css" />
-	<link rel="stylesheet" href="css/reset.css" />
-	<link rel="stylesheet" href="css/style.css" />
- 
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<script src="js/libs/ie-emulation-modes-warning.js"></script>
-	<!--[if lt IE 9]>
-	<script src="js/libs/html5shiv.min.js"></script>
-	<script src="js/libs/respond.min.js"></script>
-	<![endif]--> 
-</head> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <script src="js/libs/ie-emulation-modes-warning.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/libs/html5shiv.min.js"></script>
+    <script src="js/libs/respond.min.js"></script>
+    <![endif]-->
+</head>
 <body>
 <div class="tbe-hdtop">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-8 col-xs-12 clearfix">
-				<p class="tbe-exrate">Tỷ giá: <span>3,500</span></p>
-				<div class="tbe-newsnt">
-					<span class="tbe-newsnt-tit"><i class="fas fa-bullhorn"></i> <strong>Thông báo:</strong></span>
-					<ul class="tbe-newsnt-it">
-						<li><a href="" title="">Thay đổi bảng giá cước 2019</a></li>
-						<li><a href="" title="">Thông báo lịch nghỉ giỗ tổ Hùng Vương, giải phóng...</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-sm-4 col-xs-12">
-				<ul class="tbe-lgre">
-					<li class="tbe-lgre1"><a href="" title="">Giỏ hàng</a></li>
-					<li class="tbe-lgre2"><a href="" title="">Đăng nhập</a></li>
-					<li class="tbe-lgre3"><a href="" title="">Đăng ký</a></li>
-				</ul>
-				<div class="tbe-hdus" style="display: none;">
-					<a class="tbe-lgre1" href="" title="">Giỏ hàng</a>
-					<a href="" title="">tb</a>
-					<a href="" title=""><i></i> Lê Anh Tuấn</a>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9 col-xs-12 clearfix">
+                <p class="tbe-exrate">Tỷ giá: <span>3,500</span></p>
+                <div class="tbe-newsnt">
+                    <span class="tbe-newsnt-tit"><i class="fas fa-bullhorn"></i> <strong>Thông báo:</strong></span>
+                    <div class="tbe-newsnt-it">
+                        <div class="owl-carousel slTopNews">
+                            <div><a href="" title="">Thay đổi bảng giá cước 2019</a></div>
+                            <div><a href="" title="">Thông báo lịch nghỉ giỗ tổ Hùng Vương, giải phóng...</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-xs-12">
+                <ul class="tbe-lgre">
+                    <li class="tbe-carts"><a href="" title=""><i class="fas fa-shopping-basket"></i> <span>1</span>Giỏ
+                        hàng</a></li>
+                    <li class="tbe-login"><a href="" title=""><i class="fas fa-sign-in-alt"></i> Đăng nhập</a></li>
+                    <li class="tbe-regis"><a href="" title=""><i class="fas fa-user"></i> Đăng ký</a></li>
+                </ul>
+                <div class="tbe-hdus" style="display: none;">
+                    <li class="tbe-carts"><a href="" title=""><i class="fas fa-shopping-basket"></i> <span>1</span>Giỏ
+                        hàng</a></li>
+                    <a href="" title="">tb</a>
+                    <a href="" title=""><i></i> Lê Anh Tuấn</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="header-mid">
-	<div class="container">
-		<a href="" title=""><img src="images/tblogo.png" alt=""></a>
-		<div class="">
-			<div class="">
-				<span>Taobao</span>
-				<ul>
-					<li><a href="" title=""></a></li>
-				</ul>
-			</div>
-			<input type="text" placeholder="Nhập sản phẩm, link cần tìm ..." />
-		</div>
-		<ul>
-			<li><a href="" title="">Đặt hàng</a></li>
-			<li><a href="" title="">Ký gửi hàng</a></li>
-			<li><a href="" title=""><img src="images/hotline.png" alt=""></a></li>
-		</ul>
-	</div>
+<div class="tbe-hdmid">
+    <div class="container">
+        <a class="tbe-logo" href="/" title=""><img src="images/tblogo.png" alt=""></a>
+        <div class="tbe-hdmright clearfix">
+            <div class="tbe-search">
+                <div class="input-group">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"><img src="images/s1.png" alt=""> <span
+                                class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a title=""><img src="images/s2.png" alt=""></a></li>
+                            <li><a title=""><img src="images/s3.png" alt=""></a></li>
+                            <li><a title=""><img src="images/s4.png" alt=""></a></li>
+                            <li><a title=""><img src="images/s5.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <i class="fas fa-search"></i>
+                    <input type="text" class="form-control" placeholder="Nhập sản phẩm, link cần tìm ..."/>
+                </div>
+            </div>
+            <ul class="tbe-hdmrul">
+                <li><a class="tbe-hdbtn tbe-hdbtndh" href="" title="">Đặt hàng</a></li>
+                <li><a class="tbe-hdbtn tbe-hdbtnkg" href="" title="">Ký gửi hàng</a></li>
+            </ul>
+            <a class="tbe-hdhline" href="" title=""><img src="images/hotline.png" alt=""></a>
+        </div>
 
-</div>
-<div class="header-bot">
-	<ul class="menu-top">
-		<li><a href="" type="">Trang chủ</a></li>
-		<li><a href="" type="">Dịch vụ</a></li>
-	</ul>
-</div>
-
-<div class="banner">
-	<a href="" title=""></a>
-</div>
-
-<div class="">
-	<h2>ưu việt của hệ thống order hàng  TaobaoExpress</h2>
-	<ul>
-		<li><i></i><h3>Tạo Đơn Hàng Dễ Dàng & Nhanh Chóng</h3></li>
-		<li><i></i><h3>Quản Lý Đơn Hàng Thông Minh & Khoa Học</h3></li>
-		<li><i></i><h3>Theo Dõi Được Đường Đi Của Mã Vận Đơn TQ</h3></li>
-		<li><i></i><h3>Thời Gian Mua & Nhận Hàng Hỏa Tốc</h3></li>
-	</ul>
+    </div>
 </div>
 
-<div class="">
-	<h2>Nhập hàng với <strong>6 giải pháp</strong> đơn Giản</h2>
-	<p>(Để đơn giản hóa việc nhập hàng, Chúng tôi mang đến cho Quý khách những giải pháp nhập hàng nhanh chóng, an toàn & tiện lợi nhất)</p>
-	<ul>
-		<li>
-			<h3>Tìm kiếm nguồn hàng</h3>
-			<p>Tìm kiếm nguồn hàng nước ngoài dễ hàng bằng Tiếng Việt.</p>
-			<a href="" title="">Chi tiết</a>
-		</li>
-		<li>
-			<h3>Đặt hàng nhanh chóng</h3>
-			<p>Đặt hàng nhanh chóng chỉ với 3 bước vô cùng đơn giản.</p>
-			<a href="" title="">Chi tiết</a>
-		</li>
-		<li>
-			<h3>Quản lý giao dịch</h3>
-			<p>Quản lý mọi giao dịch và lộ trình hàng hoá 24/24 trên mọi thiết bị.</p>
-			<a href="" title="">Chi tiết</a>
-		</li>
-		<li>
-			<h3>dịch vụ gia tăng</h3>
-			<p>Cung cấp các  dịch vụ: Kiểm đếm, Đóng gỗ, Bảo hiểm hàng hoá,…</p>
-			<a href="" title="">Chi tiết</a>
-		</li>
-		<li>
-			<h3>Chiết khấu cho thành viên</h3>
-			<p>Chính sách chiết khẩu theo cấp độ thành viên và khối lượng hàng hoá.</p>
-			<a href="" title="">Chi tiết</a>
-		</li>
-		<li>
-			<h3>Hỗ trợ Vận chuyển toàn quốc</h3>
-			<p>Hỗ trợ giao hàng về tận nhà cho KH có nhu cầu, áp dụng toàn quốc.</p>
-			<a href="" title="">Chi tiết</a>
-		</li>
-	</ul>
+<div class="tbe-hdbot">
+    <div class="container">
+        <ul class="tbe-mntop clearfix">
+            <li class="active"><a href="" type=""><i class="fas fa-home"></i> Trang chủ</a></li>
+            <li><a href="" type="">Dịch vụ</a></li>
+            <li><a href="" type="">Bảng giá</a></li>
+            <li><a href="" type="">Hướng dẫn</a></li>
+            <li><a href="" type="">Chính sách</a></li>
+            <li><a href="" type="">Tin tức</a></li>
+            <li><a href="" type="">Tuyển dụng</a></li>
+            <li><a href="" type="">Liên hệ</a></li>
+        </ul>
+        <a class="tbe-tool" href="" title=""><img src="images/tool.png" alt=""></a>
+    </div>
 </div>
 
-<div class="">
-	<ul>
-		<li><i></i><strong>898</strong><span>ĐƠN HÀNG ĐANG ĐẶT</span></li>
-		<li><i></i><strong>551</strong><span>ĐƠN HÀNG VẬN CHUYỂN</span></li>
-		<li><i></i><strong>398</strong><span>ĐƠN CHUẨN BỊ GIAO</span></li>
-		<li><i></i><strong>45.000+</strong><span>ĐƠN ĐÃ HOÀN THÀNH</span></li>
-	</ul>
+<div class="tbe-banner">
+    <div class="container">
+        <div class="owl-carousel slBanner">
+            <div><a href="" title=""><img src="images/banner.jpg" alt=""></a></div>
+            <div><a href="" title=""><img src="images/banner.jpg" alt=""></a></div>
+        </div>
+    </div>
 </div>
 
-<div class="">
-	<h2>CÁc lý do không thể từ chối TaobaoExpress</h2>
-	<p>Với hơn 5000 Khách Hàng thân thiết gắn bó với chúng tôi từ những ngày đầu tiên, trung bình 1000 sản phẩm được mua mỗi ngày.</p>
-	<p>Chúng tôi tự tin mang đến cho bạn chất lượng dịch vụ hoàn hảo nhất.</p>
+<div class="tbe-s1">
+    <div class="container">
+        <h2 class="tbe-stit">Ưu việt của hệ thống order hàng <span><span>Taobao</span>Express</span></h2>
+        <div class="tbe-s1ulbox">
+            <ul class="tbe-s1ul clearfix">
+                <li>
+                    <div><span><img src="images/ic/s1-1.png" alt=""></span>
+                        <h3>Tạo Đơn Hàng Dễ Dàng & Nhanh Chóng</h3></div>
+                </li>
+                <li>
+                    <div><span><img src="images/ic/s1-2.png" alt=""></span>
+                        <h3>Quản Lý Đơn Hàng Thông Minh & Khoa Học</h3></div>
+                </li>
+                <li>
+                    <div><span><img src="images/ic/s1-3.png" alt=""></span>
+                        <h3>Theo Dõi Được Đường Đi Của Mã Vận Đơn TQ</h3></div>
+                </li>
+                <li>
+                    <div><span><img src="images/ic/s1-4.png" alt=""></span>
+                        <h3>Thời Gian Mua & Nhận Hàng Hỏa Tốc</h3></div>
+                </li>
+            </ul>
+        </div>
 
-	<ul>
-		<li>
-			<span></span>
-			<h3>Đơn giản - Tiện lợi</h3>
-			<p>Đặt hàng, theo dõi đơn hàng mọi lúc mọi nơi.</p>
-		</li>
-		<li>
-			<span></span>
-			<h3>Hệ thống mua hàng thông minh</h3>
-			<p>Quản lý bằng hệ thống hiện đại quy trình chặt chẽ.</p>
-		</li>
-		<li>
-			<span></span>
-			<h3>Giảm tối đa chi phí</h3>
-			<p>Yên tâm đặt hàng với phí dịch vụ cực kỳ ưu đãi chỉ từ 1%</p>
-		</li>
-		<li>
-			<span></span>
-			<h3>Đặt hàng nhanh chóng</h3>
-			<p>Cam kết đặt hàng trong12h sau thời gian đặt cọc.</p>
-		</li>
-		<li>
-			<span></span>
-			<h3>An toàn vận chuyển</h3>
-			<p>Đơn hàng được quản lý sát sao, tránh sai hoặc mất hàng.</p>
-		</li>
-		<li>
-			<span></span>
-			<h3>Tăng VIP giảm chi phí</h3>
-			<p>Mua càng nhiều nhận ưu đãi càng lớn. Chiết khấu cao</p>
-		</li>
-		<li>
-			<span></span>
-			<h3>Giúp khách tìm nguồn hàng</h3>
-			<p>Hỗ trợ tìm nguồn hàng từ những nhà cung cấp uy tín nhất. </p>
-		</li>
-		<li>
-			<span></span>
-			<h3>Hỗ trợ Khách Hàng 24/7</h3>
-			<p>Bạn có thắc mắc cần trả lời ngay? Đội ngũ nhân viên luôn sẵn sàng.</p>
-		</li>
-	</ul>
+        <div class="tbe-boxtit">
+            <h4 class="tbe-sbtit">Nhập hàng với <strong>6 giải pháp</strong> đơn Giản</h4>
+            <p>(Để đơn giản hóa việc nhập hàng, Chúng tôi mang đến cho Quý khách những giải pháp nhập hàng nhanh chóng,
+                an toàn & tiện lợi nhất)</p>
+        </div>
+
+        <div class="tbe-ulgpap">
+            <ul class="tbe-gpap clearfix">
+                <li>
+                    <div class="tbe-gpap-box tbe-gpap1">
+                        <h3 class="tbe-gpap-tit">Tìm kiếm nguồn hàng</h3>
+                        <p class="tbe-gpap-des">Tìm kiếm nguồn hàng nước ngoài dễ hàng bằng Tiếng Việt.</p>
+                        <p class="tbe-gpap-vm"><a href="" title="">Chi tiết »</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="tbe-gpap-box tbe-gpap2">
+                        <h3 class="tbe-gpap-tit">Đặt hàng nhanh chóng</h3>
+                        <p class="tbe-gpap-des">Đặt hàng nhanh chóng chỉ với 3 bước vô cùng đơn giản.</p>
+                        <p class="tbe-gpap-vm"><a href="" title="">Chi tiết »</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="tbe-gpap-box tbe-gpap3">
+                        <h3 class="tbe-gpap-tit">Quản lý giao dịch</h3>
+                        <p class="tbe-gpap-des">Quản lý mọi giao dịch và lộ trình hàng hoá 24/24 trên mọi thiết bị.</p>
+                        <p class="tbe-gpap-vm"><a href="" title="">Chi tiết »</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="tbe-gpap-box tbe-gpap4">
+                        <h3 class="tbe-gpap-tit">Dịch vụ gia tăng</h3>
+                        <p class="tbe-gpap-des">Cung cấp các dịch vụ: Kiểm đếm, Đóng gỗ, Bảo hiểm hàng hoá,…</p>
+                        <p class="tbe-gpap-vm"><a href="" title="">Chi tiết »</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="tbe-gpap-box tbe-gpap5">
+                        <h3 class="tbe-gpap-tit">Chiết khấu cho thành viên</h3>
+                        <p class="tbe-gpap-des">Chính sách chiết khẩu theo cấp độ thành viên và khối lượng hàng hoá.</p>
+                        <p class="tbe-gpap-vm"><a href="" title="">Chi tiết »</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="tbe-gpap-box tbe-gpap6">
+                        <h3 class="tbe-gpap-tit">Hỗ trợ Vận chuyển toàn quốc</h3>
+                        <p class="tbe-gpap-des">Hỗ trợ giao hàng về tận nhà cho KH có nhu cầu, áp dụng toàn quốc.</p>
+                        <p class="tbe-gpap-vm"><a href="" title="">Chi tiết »</a></p>
+                    </div>
+                </li>
+            </ul>
+            <p class="tbe-gpapdot"><i></i><i></i><i></i></p>
+        </div>
+
+
+    </div>
+
 </div>
 
-<div class="">
-	<h2>Bảng giá dịch vụ TaobaoExpress mới nhất</h2>
-	<p>Taobaoexpress cung cấp bảng giá cước dịch vụ tốt nhất trên thị trường hiện nay.</p>
-
-	<table>
-		<thead>
-			<tr><th>Bảng phí dịch vụ mua hàng</th></tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Giá trị đơn hàng </td>
-				<td>% Phí dịch vụ</td>
-			</tr>
-			<tr>
-				<td>Phí dịch vụ tối thiểu 1 đơn (đơn dưới 350k)</td>
-				<td>10,000 VNĐ</td>
-			</tr>
-			<tr>
-				<td>Dưới 2,000,000 VNĐ</td>
-				<td>3%</td>
-			</tr>
-			<tr>
-				<td>Từ 2,000,000 VNĐ – dưới 40,000,000 VNĐ</td>
-				<td>1,8%</td>
-			</tr>
-			<tr>
-				<td>Trên 40,000,000 VNĐ</td>
-				<td>1%</td>
-			</tr>
-		</tbody>
-	</table>
-
-	<div class="">
-		<p><img src="images/tbe.png" alt=""><</p>
-		<h2>BẢNG GIÁ NHẬP HÀNG TRUNG QUỐC chi tiết nhất</h2>
-		<p>TaoBaoExpress vận chuyển thông qua đường chính ngạch, vận chuyển nhanh nhất và giá rẻ nhất thị trường</p>
-		<ul>
-			<li><span>1</span> <p>Bảng giá đặt hàng Trung Quốc</p></li>
-			<li><span>2</span> <p>Bảng giá vận chuyển ký gửi Trung Quốc - Việt Nam</p></li>
-			<li><span>3</span> <p>Bảng giá vận chuyển Quảng Châu - Việt Nam</p></li>
-			<li><span>4</span> <p>Bảng giá dịch vụ chuyển tiền tài khoản Trung Quốc</p></li>
-		</ul>
-		<p><a href="" title="">XEM CHI TIẾT</a> </p>
-	</div>
-
-	<div class="">
-		<h2>Theo dõi Mã Vận đơn & tra cứu cước vận chuyển nội địa </h2>
-		<div class="">
-			<ul class="">
-				<li>Tra cứu</li>
-				<li>Cước vận chuyển nội địa</li>
-			</ul>
-			<div class="">
-				<div class="">
-					<ul>
-						<li><a href="" title="">Cước vận chuyển</a></li>
-						<li><a href="" title="">Mã vận đơn</a></li>
-					</ul>
-				</div>
-				<div class="">
-					<ul>
-						<li>Địa chỉ gửi</li>
-						<li>
-							<select>
-								<option>Tỉnh/Thành phố</option>
-								<option>Hà Nội</option>
-								<option>Hồ Chí Minh</option>
-							</select>
-						</li>
-						<li>
-							<select>
-								<option>Quận/Huyện</option>
-								<option>Hà Nội</option>
-								<option>Hồ Chí Minh</option>
-							</select>
-						</li>
-						<li>
-							<select>
-								<option>Phường/Xã</option>
-								<option>Hà Nội</option>
-								<option>Hồ Chí Minh</option>
-							</select>
-						</li>
-					</ul>
-					<ul>
-						<li>Địa chỉ nhận</li>
-						<li>
-							<select>
-								<option>Tỉnh/Thành phố</option>
-								<option>Hà Nội</option>
-								<option>Hồ Chí Minh</option>
-							</select>
-						</li>
-						<li>
-							<select>
-								<option>Quận/Huyện</option>
-								<option>Hà Nội</option>
-								<option>Hồ Chí Minh</option>
-							</select>
-						</li>
-						<li>
-							<select>
-								<option>Phường/Xã</option>
-								<option>Hà Nội</option>
-								<option>Hồ Chí Minh</option>
-							</select>
-						</li>
-					</ul>
-					<ul>
-						<li>Trọng lượng</li>
-						<li>
-							<input type="text">
-							<span>kg</span>
-						</li>
-						<li>
-							<button type="button">KIỂM TRA</button>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+<div class="tbe-s2">
+    <div class="container">
+        <ul class="tbe-s2rate clearfix">
+            <li><img src="images/s3-1.png" alt=""><strong>898</strong><span>ĐƠN HÀNG ĐANG ĐẶT</span></li>
+            <li><img src="images/s3-2.png" alt=""><strong>551</strong><span>ĐƠN HÀNG VẬN CHUYỂN</span></li>
+            <li><img src="images/s3-3.png" alt=""><strong>398</strong><span>ĐƠN CHUẨN BỊ GIAO</span></li>
+            <li><img src="images/s3-4.png" alt=""><strong>45.000+</strong><span>ĐƠN ĐÃ HOÀN THÀNH</span></li>
+        </ul>
+    </div>
 </div>
 
-<div class="">
-	<p><img src="images/tbe2.png" alt=""></p>
-	<div class="">
-		<h4>CÀI ĐẶT <strong>CÔNG CỤ ĐẶT HÀNG</strong> thông minh</h4>
-		<ul>
-			<li><a href="" type=""><img src="images/down-chrome.png" alt="" /></a> </li>
-			<li><a href="" type=""><img src="images/down-coccoc.png" alt="" /></a> </li>
-		</ul>
+<style>
+    .tbe-s3 {
+        padding: 50px 0;
+    }
 
-		<h4>Tải ứng dụng <strong>Taobaoexpress</strong> quản lý đơn</h4>
-		<ul>
-			<li><a href="" type=""><img src="images/down-appstore.png" alt="" /></a> </li>
-			<li><a href="" type=""><img src="images/down-ggplay.png" alt="" /></a> </li>
-		</ul>
-	</div>
+    .tbe-s3sbt {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .tbe-s3 .tbe-stit {
+        color: #585858;
+    }
+    .tbe-s3uls{
+        margin: 0 -15px;
+    }
+    .tbe-s3uls>li{
+        float: left;
+        padding: 0 15px;
+        width: 25%;
+        margin-bottom: 40px;
+    }
+    .tbe-s3uls>li>div{
+        max-width: 230px;
+        margin: auto;
+        text-align: center;
+    }
+    .tbe-s3uls>li>div>span{
+        display: block;
+        width: 134px;
+        height: 134px;
+        line-height: 134px;
+        text-align: center;
+        margin: 0 auto 15px;
+        background: #fe0000;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        border-radius: 100%;
+    }
+    .tbe-s3uls>li>div>h3{
+        font-size: 16px;
+        font-weight: bold;
+        height: 40px;
+        margin-bottom: 3px;
+    }
+    .tbe-s3uls>li>div>p{
+        color: #747474;
+    }
+</style>
+<div class="tbe-s3">
+    <div class="container">
+        <h2 class="tbe-stit">Các lý do không thể từ chối <span><span>Taobao</span>Express</span></h2>
+        <div class="tbe-s3sbt">
+            <p>Với hơn 5000 Khách Hàng thân thiết gắn bó với chúng tôi từ những ngày đầu tiên, trung bình 1000 sản phẩm được mua mỗi ngày.</p>
+            <p>Chúng tôi tự tin mang đến cho bạn chất lượng dịch vụ hoàn hảo nhất.</p>
+        </div>
+
+        <ul class="tbe-s3uls">
+            <li>
+                <div>
+                    <span><img src="images/s4-1.png" alt=""></span>
+                    <h3>Đơn giản - Tiện lợi</h3>
+                    <p>Đặt hàng, theo dõi đơn hàng mọi lúc mọi nơi.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span><img src="images/s4-2.png" alt=""></span>
+                    <h3>Hệ thống mua hàng thông minh</h3>
+                    <p>Quản lý bằng hệ thống hiện đại quy trình chặt chẽ.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span><img src="images/s4-3.png" alt=""></span>
+                    <h3>Giảm tối đa chi phí</h3>
+                    <p>Yên tâm đặt hàng với phí dịch vụ cực kỳ ưu đãi chỉ từ 1%</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span><img src="images/s4-4.png" alt=""></span>
+                    <h3>Đặt hàng nhanh chóng</h3>
+                    <p>Cam kết đặt hàng trong12h sau thời gian đặt cọc.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span><img src="images/s4-5.png" alt=""></span>
+                    <h3>An toàn vận chuyển</h3>
+                    <p>Đơn hàng được quản lý sát sao, tránh sai hoặc mất hàng.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span><img src="images/s4-6.png" alt=""></span>
+                    <h3>Tăng VIP giảm chi phí</h3>
+                    <p>Mua càng nhiều nhận ưu đãi càng lớn. Chiết khấu cao</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span><img src="images/s4-7.png" alt=""></span>
+                    <h3>Giúp khách tìm nguồn hàng</h3>
+                    <p>Hỗ trợ tìm nguồn hàng từ những nhà cung cấp uy tín nhất. </p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span><img src="images/s4-8.png" alt=""></span>
+                    <h3>Hỗ trợ Khách Hàng 24/7</h3>
+                    <p>Bạn có thắc mắc cần trả lời ngay? Đội ngũ nhân viên luôn sẵn sàng.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
 </div>
 
 <div class="">
-	<h2>Video hướng dẫn & giới thiệu sản phẩm hot trend</h2>
-	<div class="">
-		<div class="owl-carousel">
-			<div>
-				<a href="" title=""><img src="images/item1.png" alt=""></a>
-				<h3><a href="" title="">Video hướng dẫn cài đặt công cụ mua hàng trên các website Trung Quốc.</a></h3>
-			</div>
+    <h2>Bảng giá dịch vụ TaobaoExpress mới nhất</h2>
+    <p>Taobaoexpress cung cấp bảng giá cước dịch vụ tốt nhất trên thị trường hiện nay.</p>
 
-		</div>
-	</div>
+    <table>
+        <thead>
+        <tr>
+            <th>Bảng phí dịch vụ mua hàng</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Giá trị đơn hàng</td>
+            <td>% Phí dịch vụ</td>
+        </tr>
+        <tr>
+            <td>Phí dịch vụ tối thiểu 1 đơn (đơn dưới 350k)</td>
+            <td>10,000 VNĐ</td>
+        </tr>
+        <tr>
+            <td>Dưới 2,000,000 VNĐ</td>
+            <td>3%</td>
+        </tr>
+        <tr>
+            <td>Từ 2,000,000 VNĐ – dưới 40,000,000 VNĐ</td>
+            <td>1,8%</td>
+        </tr>
+        <tr>
+            <td>Trên 40,000,000 VNĐ</td>
+            <td>1%</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div class="">
+        <p><img src="images/tbe.png" alt=""><</p>
+        <h2>BẢNG GIÁ NHẬP HÀNG TRUNG QUỐC chi tiết nhất</h2>
+        <p>TaoBaoExpress vận chuyển thông qua đường chính ngạch, vận chuyển nhanh nhất và giá rẻ nhất thị trường</p>
+        <ul>
+            <li><span>1</span>
+                <p>Bảng giá đặt hàng Trung Quốc</p></li>
+            <li><span>2</span>
+                <p>Bảng giá vận chuyển ký gửi Trung Quốc - Việt Nam</p></li>
+            <li><span>3</span>
+                <p>Bảng giá vận chuyển Quảng Châu - Việt Nam</p></li>
+            <li><span>4</span>
+                <p>Bảng giá dịch vụ chuyển tiền tài khoản Trung Quốc</p></li>
+        </ul>
+        <p><a href="" title="">XEM CHI TIẾT</a></p>
+    </div>
+
+    <div class="">
+        <h2>Theo dõi Mã Vận đơn & tra cứu cước vận chuyển nội địa </h2>
+        <div class="">
+            <ul class="">
+                <li>Tra cứu</li>
+                <li>Cước vận chuyển nội địa</li>
+            </ul>
+            <div class="">
+                <div class="">
+                    <ul>
+                        <li><a href="" title="">Cước vận chuyển</a></li>
+                        <li><a href="" title="">Mã vận đơn</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <ul>
+                        <li>Địa chỉ gửi</li>
+                        <li>
+                            <select>
+                                <option>Tỉnh/Thành phố</option>
+                                <option>Hà Nội</option>
+                                <option>Hồ Chí Minh</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select>
+                                <option>Quận/Huyện</option>
+                                <option>Hà Nội</option>
+                                <option>Hồ Chí Minh</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select>
+                                <option>Phường/Xã</option>
+                                <option>Hà Nội</option>
+                                <option>Hồ Chí Minh</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>Địa chỉ nhận</li>
+                        <li>
+                            <select>
+                                <option>Tỉnh/Thành phố</option>
+                                <option>Hà Nội</option>
+                                <option>Hồ Chí Minh</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select>
+                                <option>Quận/Huyện</option>
+                                <option>Hà Nội</option>
+                                <option>Hồ Chí Minh</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select>
+                                <option>Phường/Xã</option>
+                                <option>Hà Nội</option>
+                                <option>Hồ Chí Minh</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>Trọng lượng</li>
+                        <li>
+                            <input type="text">
+                            <span>kg</span>
+                        </li>
+                        <li>
+                            <button type="button">KIỂM TRA</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="">
-	<h2>Đánh giá khách quan của khách hàng về Taobaoexpress</h2>
-	<div class="">
-		<div class="owl-carousel">
-			<div>
-				<div class="">
-					<p>Lần đầu đặt hàng tại đây, ban đầu mình cũng hoài nghi nhưng sau lô hàng đầu thì mình bắt đầu tin tưởng Taobaoexpress hơn, giờ là lựa chọn số 1 của mình.</p>
-					<div class="">
-						<img src="images/item2.png" alt="">
-						<p>Chị: Trâm Anh</p>
-						<p>Shop giầy Cầu Giấy</p>
-					</div>
-				</div>
-			</div>
+    <p><img src="images/tbe2.png" alt=""></p>
+    <div class="">
+        <h4>CÀI ĐẶT <strong>CÔNG CỤ ĐẶT HÀNG</strong> thông minh</h4>
+        <ul>
+            <li><a href="" type=""><img src="images/down-chrome.png" alt=""/></a></li>
+            <li><a href="" type=""><img src="images/down-coccoc.png" alt=""/></a></li>
+        </ul>
 
-		</div>
-	</div>
+        <h4>Tải ứng dụng <strong>Taobaoexpress</strong> quản lý đơn</h4>
+        <ul>
+            <li><a href="" type=""><img src="images/down-appstore.png" alt=""/></a></li>
+            <li><a href="" type=""><img src="images/down-ggplay.png" alt=""/></a></li>
+        </ul>
+    </div>
 </div>
 
 <div class="">
-	<h2>các  đối tác thân thiết của taobaoexpress</h2>
-	<div class="owl-carousel">
-		<div> <a href="" title=""><img src="images/p1.png" alt=""></a> </div>
-		<div> <a href="" title=""><img src="images/p2.png" alt=""></a> </div>
-		<div> <a href="" title=""><img src="images/p3.png" alt=""></a> </div>
-		<div> <a href="" title=""><img src="images/p4.png" alt=""></a> </div>
-		<div> <a href="" title=""><img src="images/p5.png" alt=""></a> </div>
-		<div> <a href="" title=""><img src="images/p6.png" alt=""></a> </div>
-	</div>
+    <h2>Video hướng dẫn & giới thiệu sản phẩm hot trend</h2>
+    <div class="">
+        <div class="owl-carousel">
+            <div>
+                <a href="" title=""><img src="images/item1.png" alt=""></a>
+                <h3><a href="" title="">Video hướng dẫn cài đặt công cụ mua hàng trên các website Trung Quốc.</a></h3>
+            </div>
+
+        </div>
+    </div>
 </div>
 
 <div class="">
-	<h2>TaobaoExpress – An Toàn, nhanh chóng VÀ giữ chữ tín</h2>
-	<p>Hàng ngày, chúng tôi luôn nỗ lực hết mình vượt qua nhiều rủi ro, khó khăn để đáp ứng khách hàng của chúng tôi một cách tốt nhất.</p>
-	<p><a href="" title="">ĐĂNG KÝ NGAY</a></p>
+    <h2>Đánh giá khách quan của khách hàng về Taobaoexpress</h2>
+    <div class="">
+        <div class="owl-carousel">
+            <div>
+                <div class="">
+                    <p>Lần đầu đặt hàng tại đây, ban đầu mình cũng hoài nghi nhưng sau lô hàng đầu thì mình bắt đầu tin
+                        tưởng Taobaoexpress hơn, giờ là lựa chọn số 1 của mình.</p>
+                    <div class="">
+                        <img src="images/item2.png" alt="">
+                        <p>Chị: Trâm Anh</p>
+                        <p>Shop giầy Cầu Giấy</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
 
 <div class="">
-	<div class="">
-		<div class="">
-			<h3><a href="" title="">HƯỚNG DẪN</a></h3>
-			<ul>
-				<li><a href="" title="">Hướng dẫn đăng ký tài khoản</a></li>
-				<li><a href="" title="">Hướng dẫn cài đặt công cụ đặt hàng</a></li>
-				<li><a href="" title="">Hướng dẫn tìm kiếm sản phẩm</a></li>
-				<li><a href="" title="">Hướng dẫn tạo đơn hàng</a></li>
-				<li><a href="" title="">Hướng dẫn nạp tiền ví điện tử</a></li>
-				<li><a href="" title="">Cách đánh giá uy tín shop</a></li>
-			</ul>
-		</div>
-		<div class="">
-			<h3><a href="" title="">DỊCH VỤ</a></h3>
-			<ul>
-				<li><a href="" title="">Hướng dẫn đăng ký tài khoản</a></li>
-				<li><a href="" title="">Hướng dẫn cài đặt công cụ đặt hàng</a></li>
-				<li><a href="" title="">Hướng dẫn tìm kiếm sản phẩm</a></li>
-				<li><a href="" title="">Hướng dẫn tạo đơn hàng</a></li>
-				<li><a href="" title="">Hướng dẫn nạp tiền ví điện tử</a></li>
-				<li><a href="" title="">Cách đánh giá uy tín shop</a></li>
-			</ul>
-		</div>
-		<div class="">
-			<h3><a href="" title="">BÀI VIẾT ĐƯỢC QUAN TÂM</a></h3>
-			<ul>
-				<li><a href="" title="">Hướng dẫn đăng ký tài khoản</a></li>
-				<li><a href="" title="">Hướng dẫn cài đặt công cụ đặt hàng</a></li>
-				<li><a href="" title="">Hướng dẫn tìm kiếm sản phẩm</a></li>
-				<li><a href="" title="">Hướng dẫn tạo đơn hàng</a></li>
-				<li><a href="" title="">Hướng dẫn nạp tiền ví điện tử</a></li>
-				<li><a href="" title="">Cách đánh giá uy tín shop</a></li>
-			</ul>
-		</div>
-	</div>
-
-	<div class="">
-		<div class="">
-			<h3><a href="" title="">THÔNG BÁO</a></h3>
-			<ul>
-				<li><a href="" title="">Hướng dẫn đăng ký tài khoản</a></li>
-				<li><a href="" title="">Hướng dẫn cài đặt công cụ đặt hàng</a></li>
-				<li><a href="" title="">Hướng dẫn tìm kiếm sản phẩm</a></li>
-				<li><a href="" title="">Hướng dẫn tạo đơn hàng</a></li>
-				<li><a href="" title="">Hướng dẫn nạp tiền ví điện tử</a></li>
-				<li><a href="" title="">Cách đánh giá uy tín shop</a></li>
-			</ul>
-		</div>
-		<div class="">
-			<h3><a href="" title="">BLOG</a></h3>
-			<ul>
-				<li><a href="" title="">Hướng dẫn đăng ký tài khoản</a></li>
-				<li><a href="" title="">Hướng dẫn cài đặt công cụ đặt hàng</a></li>
-				<li><a href="" title="">Hướng dẫn tìm kiếm sản phẩm</a></li>
-				<li><a href="" title="">Hướng dẫn tạo đơn hàng</a></li>
-				<li><a href="" title="">Hướng dẫn nạp tiền ví điện tử</a></li>
-				<li><a href="" title="">Cách đánh giá uy tín shop</a></li>
-			</ul>
-		</div>
-		<div class="">
-			<h3><a href="" title="">NGUỒN HÀNG</a></h3>
-			<ul>
-				<li><a href="" title="">Hướng dẫn đăng ký tài khoản</a></li>
-				<li><a href="" title="">Hướng dẫn cài đặt công cụ đặt hàng</a></li>
-				<li><a href="" title="">Hướng dẫn tìm kiếm sản phẩm</a></li>
-				<li><a href="" title="">Hướng dẫn tạo đơn hàng</a></li>
-				<li><a href="" title="">Hướng dẫn nạp tiền ví điện tử</a></li>
-				<li><a href="" title="">Cách đánh giá uy tín shop</a></li>
-			</ul>
-		</div>
-	</div>
+    <h2>các đối tác thân thiết của taobaoexpress</h2>
+    <div class="owl-carousel">
+        <div><a href="" title=""><img src="images/p1.png" alt=""></a></div>
+        <div><a href="" title=""><img src="images/p2.png" alt=""></a></div>
+        <div><a href="" title=""><img src="images/p3.png" alt=""></a></div>
+        <div><a href="" title=""><img src="images/p4.png" alt=""></a></div>
+        <div><a href="" title=""><img src="images/p5.png" alt=""></a></div>
+        <div><a href="" title=""><img src="images/p6.png" alt=""></a></div>
+    </div>
 </div>
 
 <div class="">
-	<p>Chi nhánh Hà Nội: P.612, Tòa Nhà N6E, Trung Hòa Nhân Chính, Cầu Giấy, Hà Nội (Sau tòa Handico 6) - Chi Nhánh HCM: Lầu 3, 63 Ký Hòa, Phường 11, Quận 5, TP. HCM</p>
-	<p>TaobaoExpress giải pháp đặc biệt được thiết kế, tối ưu riêng cho việc Đặt Hàng Trung Quốc . Được thiết kế để việc mua bán,ký gửi hàng hóa thuận tiện nhất cho người dùng (ngoại trừ các mặt hàng hóa nằm trong danh sách cấm mua bán & vận chuyển theo luật pháp Việt Nam)</p>
+    <h2>TaobaoExpress – An Toàn, nhanh chóng VÀ giữ chữ tín</h2>
+    <p>Hàng ngày, chúng tôi luôn nỗ lực hết mình vượt qua nhiều rủi ro, khó khăn để đáp ứng khách hàng của chúng tôi một
+        cách tốt nhất.</p>
+    <p><a href="" title="">ĐĂNG KÝ NGAY</a></p>
+</div>
+
+<div class="">
+    <div class="">
+        <div class="">
+            <h3><a href="" title="">HƯỚNG DẪN</a></h3>
+            <ul>
+                <li><a href="" title="">Hướng dẫn đăng ký tài khoản</a></li>
+                <li><a href="" title="">Hướng dẫn cài đặt công cụ đặt hàng</a></li>
+                <li><a href="" title="">Hướng dẫn tìm kiếm sản phẩm</a></li>
+                <li><a href="" title="">Hướng dẫn tạo đơn hàng</a></li>
+                <li><a href="" title="">Hướng dẫn nạp tiền ví điện tử</a></li>
+                <li><a href="" title="">Cách đánh giá uy tín shop</a></li>
+            </ul>
+        </div>
+        <div class="">
+            <h3><a href="" title="">DỊCH VỤ</a></h3>
+            <ul>
+                <li><a href="" title="">Hướng dẫn đăng ký tài khoản</a></li>
+                <li><a href="" title="">Hướng dẫn cài đặt công cụ đặt hàng</a></li>
+                <li><a href="" title="">Hướng dẫn tìm kiếm sản phẩm</a></li>
+                <li><a href="" title="">Hướng dẫn tạo đơn hàng</a></li>
+                <li><a href="" title="">Hướng dẫn nạp tiền ví điện tử</a></li>
+                <li><a href="" title="">Cách đánh giá uy tín shop</a></li>
+            </ul>
+        </div>
+        <div class="">
+            <h3><a href="" title="">BÀI VIẾT ĐƯỢC QUAN TÂM</a></h3>
+            <ul>
+                <li><a href="" title="">Hướng dẫn đăng ký tài khoản</a></li>
+                <li><a href="" title="">Hướng dẫn cài đặt công cụ đặt hàng</a></li>
+                <li><a href="" title="">Hướng dẫn tìm kiếm sản phẩm</a></li>
+                <li><a href="" title="">Hướng dẫn tạo đơn hàng</a></li>
+                <li><a href="" title="">Hướng dẫn nạp tiền ví điện tử</a></li>
+                <li><a href="" title="">Cách đánh giá uy tín shop</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="">
+        <div class="">
+            <h3><a href="" title="">THÔNG BÁO</a></h3>
+            <ul>
+                <li><a href="" title="">Hướng dẫn đăng ký tài khoản</a></li>
+                <li><a href="" title="">Hướng dẫn cài đặt công cụ đặt hàng</a></li>
+                <li><a href="" title="">Hướng dẫn tìm kiếm sản phẩm</a></li>
+                <li><a href="" title="">Hướng dẫn tạo đơn hàng</a></li>
+                <li><a href="" title="">Hướng dẫn nạp tiền ví điện tử</a></li>
+                <li><a href="" title="">Cách đánh giá uy tín shop</a></li>
+            </ul>
+        </div>
+        <div class="">
+            <h3><a href="" title="">BLOG</a></h3>
+            <ul>
+                <li><a href="" title="">Hướng dẫn đăng ký tài khoản</a></li>
+                <li><a href="" title="">Hướng dẫn cài đặt công cụ đặt hàng</a></li>
+                <li><a href="" title="">Hướng dẫn tìm kiếm sản phẩm</a></li>
+                <li><a href="" title="">Hướng dẫn tạo đơn hàng</a></li>
+                <li><a href="" title="">Hướng dẫn nạp tiền ví điện tử</a></li>
+                <li><a href="" title="">Cách đánh giá uy tín shop</a></li>
+            </ul>
+        </div>
+        <div class="">
+            <h3><a href="" title="">NGUỒN HÀNG</a></h3>
+            <ul>
+                <li><a href="" title="">Hướng dẫn đăng ký tài khoản</a></li>
+                <li><a href="" title="">Hướng dẫn cài đặt công cụ đặt hàng</a></li>
+                <li><a href="" title="">Hướng dẫn tìm kiếm sản phẩm</a></li>
+                <li><a href="" title="">Hướng dẫn tạo đơn hàng</a></li>
+                <li><a href="" title="">Hướng dẫn nạp tiền ví điện tử</a></li>
+                <li><a href="" title="">Cách đánh giá uy tín shop</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="">
+    <p>Chi nhánh Hà Nội: P.612, Tòa Nhà N6E, Trung Hòa Nhân Chính, Cầu Giấy, Hà Nội (Sau tòa Handico 6) - Chi Nhánh HCM:
+        Lầu 3, 63 Ký Hòa, Phường 11, Quận 5, TP. HCM</p>
+    <p>TaobaoExpress giải pháp đặc biệt được thiết kế, tối ưu riêng cho việc Đặt Hàng Trung Quốc . Được thiết kế để việc
+        mua bán,ký gửi hàng hóa thuận tiện nhất cho người dùng (ngoại trừ các mặt hàng hóa nằm trong danh sách cấm mua
+        bán & vận chuyển theo luật pháp Việt Nam)</p>
 </div>
 
 
 <!-- Js -->
 <script src="js/libs/jquery-1.11.2.min.js"></script>
 <script src="js/libs/bootstrap.min.js"></script>
+<script src="js/libs/owl.carousel.min.js"></script>
 <script src="js/functions.js"></script>
 </body>
 </html>

@@ -34,6 +34,7 @@ a, a:hover, a:focus, a:active {
 .tbe-exrate {
     float: left;
     width: 125px;
+    white-space: nowrap;
     position: relative;
     color: #625b5b;
     border-right: 1px solid #cccccc;
@@ -114,13 +115,13 @@ a, a:hover, a:focus, a:active {
     margin-right: 3px;
 }
 
-.tbe-carts {
+.tbe-canoti {
     margin-right: 10px;
     padding-right: 10px;
     border-right: 1px solid #cccccc;
 }
 
-.tbe-carts span {
+.tbe-canoti b {
     display: inline-block;
     width: 14px;
     height: 14px;
@@ -137,8 +138,62 @@ a, a:hover, a:focus, a:active {
     border-radius: 100%;
 }
 
+.tbe-usebtn {
+    overflow: hidden;
+    white-space: nowrap;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    width: 125px;
+    padding-right: 10px;
+    position: relative;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.tbe-usebtn:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #ccc;
+}
+
+.tbe-bellbtn {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.tbe-hdus {
+    float: right;
+}
+
 .tbe-login {
     padding-right: 10px;
+}
+
+.tbe-hdus > li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.tbe-hdus > li > a {
+    display: inline-block;
+    color: #625b5b;
+    position: relative;
+}
+
+.tbe-hdus .dropdown-menu {
+    right: 0;
+    left: auto;
+}
+
+.tbe-hdus .dropdown-menu > li > a {
+    font-size: 13px;
 }
 
 /*header mid*/
@@ -151,6 +206,38 @@ a, a:hover, a:focus, a:active {
     float: left;
     display: inline-block;
     width: 260px;
+}
+
+.tbe-hdicmn {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ff0000;
+}
+
+.tbe-hdcall {
+    display: none;
+    position: absolute;
+    top: 7px;
+    right: 15px;
+}
+
+.tbe-hdcall span {
+    display: block;
+    font-size: 11px;
+    letter-spacing: .4px;
+    text-align: right;
+}
+
+.tbe-hdcall strong {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+    color: #ff0000;
 }
 
 .tbe-hdmright {
@@ -300,6 +387,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .tbe-mntop > li > a {
+    display: block;
     height: 40px;
     line-height: 40px;
     text-transform: uppercase;
@@ -395,6 +483,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .tbe-s1ulbox {
+    overflow: hidden;
     margin-bottom: 35px;
     border-bottom: 1px dashed #cccccc;
 }
@@ -435,6 +524,7 @@ a, a:hover, a:focus, a:active {
 .tbe-s1ul > li > div > h3 {
     font-weight: bold;
     font-size: 16px;
+    line-height: 1.4;
     color: #fe0000;
 }
 
@@ -507,7 +597,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .tbe-gpap-des {
-    margin-bottom: 5px;
+    position: relative;
 }
 
 .tbe-gpap-vm {
@@ -531,6 +621,12 @@ a, a:hover, a:focus, a:active {
 .tbe-gpap5:after {
     right: -14px;
     background-image: url("../images/s2-ar1.png");
+}
+
+.tbe-gpap2 .tbe-gpap-des,
+.tbe-gpap4 .tbe-gpap-des,
+.tbe-gpap6 .tbe-gpap-des {
+    padding-right: 50px;
 }
 
 .tbe-gpap2:after,
@@ -635,6 +731,7 @@ a, a:hover, a:focus, a:active {
 
 /*section 2*/
 .tbe-s2 {
+    overflow: hidden;
     height: 400px;
     padding-top: 100px;
     background: #fe0000 url("../images/s2bg.png") no-repeat center;
@@ -668,6 +765,7 @@ a, a:hover, a:focus, a:active {
 
 /*section 3*/
 .tbe-s3 {
+    overflow: hidden;
     padding: 50px 0 0;
 }
 
@@ -681,6 +779,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .tbe-s3box {
+    overflow: hidden;
     margin-bottom: 50px;
     padding-bottom: 20px;
     border-bottom: 1px dashed #cccccc;
@@ -920,6 +1019,7 @@ a, a:hover, a:focus, a:active {
 
 /*section 6*/
 .tbe-s6 {
+    overflow: hidden;
     padding: 50px 0;
     background: url("../images/s6bg.jpg") no-repeat center;
     -webkit-background-size: cover;
@@ -1305,4 +1405,366 @@ a, a:hover, a:focus, a:active {
 .tbe-footer h5 {
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+/*media*/
+@media (max-width: 1200px) {
+    .tbe-logo {
+        width: 215px;
+    }
+
+    .tbe-hdmright {
+        margin-left: 235px;
+    }
+
+    .tbe-search {
+        padding-right: 10px;
+    }
+
+    .tbe-hdbtndh:before,
+    .tbe-hdbtnkg:before {
+        display: none;
+    }
+
+    .tbe-hdbtn {
+        font-size: 13px;
+    }
+
+    .tbe-mntop > li {
+        margin-left: 18px;
+    }
+
+    .tbe-mntop > li > a {
+        font-size: 14px;
+    }
+
+    .tbe-s1ul > li > div {
+        padding: 0;
+    }
+
+    .tba-gct-img {
+        width: 350px;
+    }
+
+    .tba-gct-right {
+        margin-left: 380px;
+    }
+
+    .tbe-sbtit {
+        font-size: 18px;
+    }
+
+    .tbe-s10 .tbe-stit,
+    .tbe-s10 .tbe-stit span {
+        font-size: 30px;
+    }
+
+    .slVideo .owl-prev {
+        border: none !important;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5) !important;
+    }
+
+    .slVideo .owl-next {
+        border: none !important;
+        right: 0;
+        background: rgba(0, 0, 0, 0.5) !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .tbe-newsnt {
+        display: none;
+    }
+
+    .tbe-exrate {
+        float: none;
+        width: auto;
+        border-right: none;
+    }
+
+    .tbe-search {
+        width: 45%;
+    }
+
+    .tbe-hdmrul {
+        width: 55%;
+        padding-right: 175px;
+    }
+
+    .tbe-hdmrul > li {
+        padding-left: 5px;
+    }
+
+    .tbe-hdmright {
+        margin-left: 150px;
+    }
+
+    .tbe-logo {
+        padding-top: 8px;
+        width: 140px;
+    }
+
+    .tbe-tool {
+        width: 135px;
+        padding: 0 5px;
+    }
+
+    .tbe-mntop > li {
+        margin-left: 7px;
+    }
+
+    .tbe-mntop > li > a {
+        font-size: 13px;
+    }
+
+    .tbe-gpap-tit {
+        font-size: 14px;
+    }
+
+    .tbe-gpap-des {
+        font-size: 13px;
+    }
+
+    .tbe-s2rate > li span {
+        font-size: 13px;
+    }
+
+    .tbe-s2rate > li strong {
+        font-size: 38px;
+    }
+
+    .tba-gct-img {
+        width: 100%;
+        float: none;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .tba-gct-right {
+        margin-left: 0;
+    }
+
+    .tba-gctvm {
+        text-align: center;
+    }
+
+    .tbe-tcurow .form-control {
+        margin-bottom: 5px;
+    }
+
+    .tbe-s1ul > li > div > span {
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+    }
+
+    .tbe-s3uls > li > div > span {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tbe-hdcall,
+    .tbe-hdicmn {
+        display: inline-block;
+    }
+
+    .tbe-logo {
+        float: none;
+        display: block;
+        padding: 10px 0;
+        width: 155px;
+        position: relative;
+        left: 30px;
+    }
+
+    .tbe-gpapdot,
+    .tbe-hdbot,
+    .tbe-hdhline,
+    .tbe-hdmrul {
+        display: none;
+    }
+
+    .tbe-hdmid {
+        height: auto;
+        padding: 5px 0;
+    }
+
+    .tbe-search {
+        padding: 0;
+        margin: 0;
+        float: none;
+        width: 100%;
+    }
+
+    .tbe-hdmright {
+        margin-left: 0;
+    }
+
+    .tbe-stit {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .tbe-sbtit {
+        line-height: 1.4;
+    }
+
+    .tbe-sbtit strong,
+    .tbe-stit span {
+        font-size: 22px;
+    }
+
+    .tbe-s1ul > li {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .tbe-s1ul > li > div > h3 {
+        color: #585858;
+        font-size: 14px;
+    }
+
+    .tbe-gpap > li {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .tbe-gpap-box {
+        min-height: 120px;
+        height: auto;
+    }
+
+    .tbe-boxtit {
+        margin-bottom: 0;
+    }
+
+    .tbe-gpap {
+        margin: 0 -50px 15px;
+    }
+
+    .tbe-s2 {
+        padding-top: 30px;
+    }
+
+    .tbe-s2rate > li {
+        margin-bottom: 30px;
+        width: 50%;
+    }
+
+    .tbe-s2rate > li strong {
+        display: block;
+        padding: 5px 0;
+    }
+
+    .tbe-s3uls > li {
+        width: 50%;
+    }
+
+    .tba-gctul {
+        padding-top: 30px;
+    }
+
+    .tbe-tcu-top {
+        display: none;
+    }
+
+    .tbe-tculbox {
+        display: block;
+        width: 100%;
+        border-right: none;
+        padding: 10px;
+    }
+
+    .tbe-tcurow {
+        padding: 8px 0;
+    }
+
+    .tbe-tcul {
+        min-height: auto;
+    }
+
+    .tbe-tcuu {
+        padding: 10px;
+    }
+
+    .tbe-s10 {
+        padding: 40px 0;
+        height: auto;
+    }
+
+    .tbe-s10 .tbe-stit,
+    .tbe-s10 .tbe-stit span {
+        font-size: 24px;
+    }
+
+    .tbe-s11ul > li > a {
+        font-size: 13px;
+        padding: 5px 5px 5px 15px;
+    }
+
+    .tbe-s8tit {
+        font-size: 18px;
+    }
+
+    .tbe-s8tit > h2 > span {
+        font-size: 22px;
+    }
+
+    .tbe-hdbot {
+        height: auto;
+    }
+
+    .tbe-mntop > li {
+        margin-left: 0;
+        float: none;
+    }
+
+    .tbe-mntop > li > a {
+        display: block;
+        height: auto;
+        line-height: normal;
+        padding: 8px 0;
+    }
+
+    .tbe-tool {
+        width: 100%;
+        height: auto;
+        line-height: normal;
+        padding: 5px;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    .tbe-hdbot.mnShow {
+        display: block;
+    }
+}
+
+@media (max-width: 520px) {
+    .tba-gctul > li {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .tba-gctvm {
+        padding-top: 0;
+    }
+
+    .tbe-hdus li span,
+    .tbe-lgre li span {
+        display: none;
+    }
+
+    .tbe-usebtn {
+        width: auto;
+    }
+
+    .tbe-s11col {
+        width: 100%;
+    }
 }

@@ -43,7 +43,23 @@
                 loop: false,
                 margin: 15,
                 nav: true,
-                navText: ''
+                navText: '',
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    580:{
+                        items:2
+                    },
+                    992:{
+                        items:3
+                    },
+                    1200:{
+                        items:3
+                    }
+                }
             })
         }
     };
@@ -59,6 +75,24 @@
                 dots: true,
                 loop: false,
                 margin: 45,
+                responsiveClass:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    480:{
+                        items:1
+                    },
+                    580:{
+                        items:2
+                    },
+                    992:{
+                        items:2
+                    },
+                    1200:{
+                        items:3
+                    }
+                }
             })
         }
     };
@@ -74,6 +108,22 @@
                 dots: false,
                 loop: false,
                 margin: 50,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive:{
+                    0:{
+                        items:3
+                    },
+                    580:{
+                        items:4
+                    },
+                    992:{
+                        items:5
+                    },
+                    1200:{
+                        items:6
+                    }
+                }
             })
         }
     };
@@ -103,6 +153,18 @@
             slPartner.init();
         }
 
+        /*var & call: wow animation*/
+        var wow = new WOW({
+            animateClass: 'animated',
+            offset: 5
+        });
+        wow.init();
+
+        /*event click show menu mobile*/
+        $(document).on('click','.tbe-hdicmn',function () {
+            $('.tbe-hdbot').toggleClass('mnShow');
+        });
+
         /*event click select item search*/
         $(document).on('click','.tbe-search .dropdown-menu li a',function () {
             var iSrcbtn = $('.tbe-search .btn img').attr('src');
@@ -110,6 +172,6 @@
             $('.tbe-search .btn img').attr('src',iSrcSec);
             $(this).find($('.tbe-search .dropdown-menu img')).attr('src',iSrcbtn);
         });
-	
+
 	});
 })(window.jQuery);

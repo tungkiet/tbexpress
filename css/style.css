@@ -298,13 +298,18 @@ a, a:hover, a:focus, a:active {
     height: 36px;
 }
 
-.tbe-search .fa-search {
+.tbe-searbtn {
+    width: 40px;
+    height: 40px;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 0;
+    right: 0;
     font-size: 19px;
     z-index: 4;
     color: #ed1f24;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    border-left: none;
 }
 
 .tbe-hdmrul > li {
@@ -432,6 +437,9 @@ a, a:hover, a:focus, a:active {
 }
 
 /*section 1*/
+.tbe-s1{
+    overflow: hidden;
+}
 .tbe-stit {
     position: relative;
     font-size: 20px;
@@ -1335,6 +1343,12 @@ a, a:hover, a:focus, a:active {
     font-size: 16px;
     color: #ff0000;
     background: #ffffff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 2px 4px 0 #2f1010;
+    -moz-box-shadow: 0 2px 4px 0 #2f1010;
+    box-shadow: 0 2px 4px 0 #2f1010;
 }
 
 /*section 11*/
@@ -1743,6 +1757,10 @@ a, a:hover, a:focus, a:active {
     .tbe-hdbot.mnShow {
         display: block;
     }
+
+    .tbe-s3uls > li > div{
+        height: 225px;
+    }
 }
 
 @media (max-width: 520px) {
@@ -1766,5 +1784,13 @@ a, a:hover, a:focus, a:active {
 
     .tbe-s11col {
         width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .tbe-stit:before {
+        width: 100%;
+        left: 0;
+        margin-left: 0;
     }
 }

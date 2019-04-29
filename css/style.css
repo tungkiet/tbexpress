@@ -389,6 +389,7 @@ a, a:hover, a:focus, a:active {
 .tbe-mntop > li {
     float: left;
     margin-right: 25px;
+    position: relative;
 }
 
 .tbe-mntop > li > a {
@@ -406,8 +407,104 @@ a, a:hover, a:focus, a:active {
 }
 
 .tbe-mntop > li.active > a,
-.tbe-mntop > li > a:hover {
+.tbe-mntop > li:hover > a {
     color: #ed1f24;
+}
+
+.tbe-mntop > li > ul > li > a {
+    display: block;
+    padding: 5px;
+    color: #ffffff;
+    border-bottom: 1px solid rgb(198, 0, 0);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.tbe-mntop > li > ul > li:hover > a {
+    color: #fff40a;
+}
+
+.tbe-mntop > li > ul > li:last-child > a {
+    border-bottom: none;
+}
+
+.tbe-mntop > li > ul {
+    z-index: 99;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ED1F24;
+    width: 300px;
+    border-radius: 3px 3px 0 0;
+    padding: 3px 0 0;
+    opacity: 0;
+    visibility: visible;
+    max-width: 0;
+    max-height: 0;
+    -webkit-box-shadow: 0 3px 10px -4px #500406;
+    -moz-box-shadow: 0 3px 10px -4px #500406;
+    box-shadow: 0 3px 10px -4px #500406;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: perspective(600px) rotateX(-90deg);
+    -moz-transform: perspective(600px) rotateX(-90deg);
+    -ms-transform: perspective(600px) rotateX(-90deg);
+    -o-transform: perspective(600px) rotateX(-90deg);
+    transform: perspective(600px) rotateX(-90deg);
+    -webkit-transition: -webkit-transform .5s ease, opacity .6s ease, max-height .6s step-end, max-width .6s step-end, padding .6s step-end;
+    -o-transition: -o-transform .5s ease, opacity .6s ease, max-height .6s step-end, max-width .6s step-end, padding .6s step-end;
+    transition: transform .5s ease, opacity .6s ease, max-height .6s step-end, max-width .6s step-end, padding .6s step-end;
+}
+
+.tbe-mntop > li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    max-width: 5000px;
+    max-height: 5000px;
+    -webkit-transform: perspective(600px) rotateX(0);
+    -moz-transform: perspective(600px) rotateX(0);
+    -ms-transform: perspective(600px) rotateX(0);
+    -o-transform: perspective(600px) rotateX(0);
+    transform: perspective(600px) rotateX(0);
+    -webkit-transition: -webkit-transform .5s ease, opacity .2s ease, max-height 0s step-end, max-width 0s step-end, padding 0s step-end;
+    -o-transition: -o-transform .5s ease, opacity .2s ease, max-height 0s step-end, max-width 0s step-end, padding 0s step-end;
+    transition: transform .5s ease, opacity .2s ease, max-height 0s step-end, max-width 0s step-end, padding 0s step-end;
+}
+
+.tbe-mnics {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 32px;
+    height: 31px;
+    cursor: pointer;
+    line-height: 32px;
+    text-align: center;
+    background: #ED1F24;
+}
+
+.tbe-mnics:before {
+    content: "";
+    display: inline-block;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 1px 0 0;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    top: -2px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
 }
 
 .tbe-tool {
@@ -1538,8 +1635,20 @@ a, a:hover, a:focus, a:active {
 }
 
 .tbe-nldvs > li > a {
+    padding: 0;
     display: block;
     position: relative;
+}
+
+.tbe-nldvs > li > a:active,
+.tbe-nldvs > li > a:focus,
+.tbe-nldvs > li > a:hover {
+    background: transparent;
+}
+
+.tbe-nldvs > li.active > a,
+.tbe-nldvs > li:hover > a {
+    color: #ff0000;
 }
 
 .tbe-ntags a {
@@ -1630,17 +1739,45 @@ a, a:hover, a:focus, a:active {
 }
 
 /*CONTACT*/
-.tbe-titcontact{
+.tbe-titcontact {
     font-size: 22px;
     font-weight: bold;
     line-height: 1.3;
     margin-bottom: 8px;
     text-transform: uppercase;
 }
-.tbe-contact{
+
+.tbe-contact {
     line-height: 1.8;
 }
 
+.tbe-qprhd {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.tbe-qprtit {
+    font-size: 20px;
+    padding: 10px 0 10px;
+}
+
+.tbe-qprtbe thead tr th {
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    background: #185493;
+}
+
+.tbe-qprtrs td {
+    font-weight: bold;
+    color: #ffffff;
+    background: #185493;
+    text-align: center;
+}
+
+.tbe-qprol {
+    padding-left: 15px;
+}
 
 /*MEDIA RESPONSIVE*/
 @media (max-width: 1200px) {
@@ -1848,6 +1985,47 @@ a, a:hover, a:focus, a:active {
         margin-left: 0;
     }
 
+    .tbe-mnics {
+        display: inline-block;
+    }
+
+    .tbe-mntop > li > ul {
+        display: none;
+        position: relative;
+        width: 100%;
+        padding: 0;
+        background: #ffffff;
+        visibility: visible;
+        opacity: 1;
+        max-width: 5000px;
+        max-height: 5000px;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        -webkit-transform: perspective(600px) rotateX(0);
+        -moz-transform: perspective(600px) rotateX(0);
+        -ms-transform: perspective(600px) rotateX(0);
+        -o-transform: perspective(600px) rotateX(0);
+        transform: perspective(600px) rotateX(0);
+        -webkit-transition: -webkit-transform .5s ease, opacity .2s ease, max-height 0s step-end, max-width 0s step-end, padding 0s step-end;
+        -o-transition: -o-transform .5s ease, opacity .2s ease, max-height 0s step-end, max-width 0s step-end, padding 0s step-end;
+        transition: transform .5s ease, opacity .2s ease, max-height 0s step-end, max-width 0s step-end, padding 0s step-end;
+    }
+
+    .tbe-mntop > li > ul > li > a {
+        color: #000000;
+        font-size: 13px;
+        border-bottom: 1px solid rgb(222, 222, 222);
+    }
+
+    .tbe-mntop > li:hover > ul {
+        display: none;
+    }
+
+    .tbe-mntop > li.tbsshow > ul {
+        display: block !important;
+    }
+
     .tbe-stit {
         font-size: 18px;
         line-height: 1.4;
@@ -2002,7 +2180,7 @@ a, a:hover, a:focus, a:active {
         margin-left: 95px;
     }
 
-    .tbe-ndeblq-ul>li {
+    .tbe-ndeblq-ul > li {
         width: 100%;
     }
 }
